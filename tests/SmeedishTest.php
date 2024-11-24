@@ -22,6 +22,7 @@ class SmeedishTest extends TestCase
             'remove unnecessary spaces world' => ['   world!', 'world'],
             'remove unnecessary spaces 2 world' => ['world!  ', 'world'],
             'remove unnecessary spaces 3 world' => ['     world!  ', 'world'],
+            'big difficult encrypted word' => ['WZXHh3eE7*$%^9(lOL09l9@#!%^9)(0o! ', 'hello']
         ];
     }
 
