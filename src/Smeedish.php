@@ -6,6 +6,6 @@ class Smeedish
 {
     public static function decrypt(string $cypherText) : string
     {
-        return 'hello';
+        return preg_replace('/[^a-z]/', '', trim($cypherText));
     }
 }
