@@ -4,8 +4,8 @@ namespace Smeed;
 
 class Smeedish
 {
-    public static function decrypt(string $cypherText) : string
+    public static function decrypt(string $cipher) : string
     {
-        return preg_replace('/[^a-z]/', '', trim($cypherText));
+        return preg_replace('/[^a-z]/', '', trim($cipher));
     }
 }

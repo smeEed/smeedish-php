@@ -29,8 +29,8 @@ class SmeedishTest extends TestCase
     /**
      * @dataProvider provideSingleWordDecryptions
      */
-    public function testDecryptsSingleWords(string $cypherText, string $decoded) : void
+    public function testDecryptsSingleWords(string $cipher, string $decoded) : void
     {
-        $this->assertSame($decoded, Smeedish::decrypt($cypherText));
+        $this->assertSame($decoded, Smeedish::decrypt($cipher));
     }
 }
